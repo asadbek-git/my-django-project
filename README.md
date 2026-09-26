@@ -1,4 +1,6 @@
-# Django loyihasi
+# my-django-project
+
+Django frameworkida yaratilgan o‘zbekcha boshlang‘ich loyiha.
 
 Python 3.10 yoki undan yangiroq versiya va `pip` kerak.
 
