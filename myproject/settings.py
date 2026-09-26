@@ -102,9 +102,12 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'uz'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Tashkent'
+
+SITE_NAME = 'My Django Project'
+SITE_DESCRIPTION = 'Django loyihasi uchun boshqaruv paneli'
 
 USE_I18N = True
 

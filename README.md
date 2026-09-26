@@ -29,21 +29,22 @@ Sayt `http://127.0.0.1:8000/` manzilida ochiladi.
 
 ## GitHub'ga joylash
 
-1. GitHub hisobingizga kiring va **New repository** orqali yangi repository yarating.
-2. Repository nomini tanlang. README lokalda mavjud bo‘lgani uchun GitHub'da README bilan boshlashni tanlamang.
-3. Loyiha papkasida Git'ni boshlang va birinchi commitni yarating:
+1. GitHub hisobingizga kiring va **New repository** orqali `my-django-project` nomli repository yarating. **Add a README file** opsiyasini tanlang.
+2. Repository yaratilgach, uning manzilini lokal loyihaga ulang:
 
 ```sh
-git init -b main
-git add .
-git commit -m "Initial Django project"
+git remote add origin https://github.com/USERNAME/my-django-project.git
+git pull origin main --allow-unrelated-histories --no-rebase
 ```
 
-4. GitHub ko‘rsatgan repository manzilini remote sifatida qo‘shib, yuboring:
+Remote README va lokal README to‘qnashsa, README faylida loyihaga tegishli bitta matnni qoldirib, merge'ni yakunlang:
 
 ```sh
-git remote add origin https://github.com/USERNAME/REPOSITORY.git
+git add README.md
+git commit -m "Merge GitHub README"
 git push -u origin main
 ```
+
+Loyihadagi boshlang‘ich Git commiti `Initial commit`, sozlamalar uchun keyingi commit esa `Added new settings` nomi bilan yaratiladi.
 
 Virtual muhit, `.env` fayli va lokal SQLite bazasi Git'ga kiritilmaydi. Ishlab chiqarish muhitiga joylashdan oldin `myproject/settings.py` ichidagi `SECRET_KEY` va `DEBUG` sozlamalarini xavfsiz muhit o‘zgaruvchilaridan foydalanadigan qilib o‘zgartiring.
