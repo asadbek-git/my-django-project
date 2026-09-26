@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.conf import settings
 from django.contrib import admin
-from django.urls import path
+from django.urls import include, path
 
 admin.site.site_header = settings.SITE_NAME
 admin.site.site_title = settings.SITE_NAME
@@ -24,4 +24,5 @@ admin.site.index_title = settings.SITE_DESCRIPTION
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('hello/', include('hello.urls')),
 ]

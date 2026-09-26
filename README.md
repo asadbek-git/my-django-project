@@ -26,6 +26,13 @@ python manage.py runserver
 ```
 
 Sayt `http://127.0.0.1:8000/` manzilida ochiladi.
+`http://127.0.0.1:8000/hello/` manzili `Hello, World!` javobini qaytaradi.
+
+Hello endpoint testini ishga tushirish:
+
+```sh
+python manage.py test hello
+```
 
 ## GitHub'ga joylash
 
